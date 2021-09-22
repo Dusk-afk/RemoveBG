@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">bacground-color:#ffffff;</string>
+   </property>
+   <widget class="QLineEdit" name="api_key_line_edit">
+    <property name="geometry">
+     <rect>
+      <x>37</x>
+      <y>18</y>
+      <width>617</width>
+      <height>62</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>617</width>
+      <height>62</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#FFFFFF;
+padding-left:20px;
+border-radius:30px;
+border: 1px solid;
+color:#424242;
+border-color: rgb(112, 112, 112);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="maxLength">
+     <number>24</number>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="placeholderText">
+     <string>API Key here</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="image_holder">
+    <property name="geometry">
+     <rect>
+      <x>37</x>
+      <y>100</y>
+      <width>950</width>
+      <height>510</height>
+     </rect>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:1px;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="remove_bg_btn">
+    <property name="geometry">
+     <rect>
+      <x>141</x>
+      <y>630</y>
+      <width>272</width>
+      <height>74</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#9EFFB7;
+font: 14pt &quot;Segoe UI&quot;;
+color:#414141;
+border-radius:37px;</string>
+    </property>
+    <property name="text">
+     <string>Remove BG</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dowload_btn">
+    <property name="geometry">
+     <rect>
+      <x>597</x>
+      <y>630</y>
+      <width>272</width>
+      <height>74</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#96F1FF;
+font: 14pt &quot;Segoe UI&quot;;
+color:#414141;
+border-radius:37px;</string>
+    </property>
+    <property name="text">
+     <string>Download</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="background">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1024</width>
+      <height>768</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="drag_drop_label">
+    <property name="geometry">
+     <rect>
+      <x>37</x>
+      <y>100</y>
+      <width>950</width>
+      <height>510</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid;
+font-family: &quot;Segoe UI&quot;;
+border-radius: 30px;
+border-color:#707070;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:22pt; font-weight:600; color:#414141;&quot;&gt;Drag &amp;amp; Drop&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#414141;&quot;&gt;or&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#414141;&quot;&gt;Click Here to Select&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <zorder>background</zorder>
+   <zorder>api_key_line_edit</zorder>
+   <zorder>image_holder</zorder>
+   <zorder>remove_bg_btn</zorder>
+   <zorder>dowload_btn</zorder>
+   <zorder>drag_drop_label</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
